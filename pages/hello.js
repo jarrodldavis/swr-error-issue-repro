@@ -7,7 +7,7 @@ function login() {
 
 function logout() {
   document.cookie = "authenticated=no;max-age=0"
-  mutate('/api/hello')
+  mutate('/api/hello', null)
 }
 
 export default function HelloPage() {
